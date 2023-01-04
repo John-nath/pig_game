@@ -1,0 +1,146 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0 ,125, 125, .70);
+    position: relative;
+    
+}
+
+.logobox {
+    margin: 5vh  auto 5vh auto;
+    height: 6vh;
+    text-align: center;
+    font-size: 45px;
+}
+
+.dice-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dicebox {
+    margin: 30px 0 30px 0;
+    height: 100px;
+}
+
+
+.score-text {
+    font-size: 20px;
+}
+.gutter-horizontal {
+    margin-bottom: 3.5vh;
+}
+
+.dice1 {
+    width: 100px;
+    margin-right: 5vw;
+    display: inline-block;
+    height:100px;
+    /* position: absolute; */
+    
+}
+
+.dice2 {
+    width:100px;
+    margin-left: 5vw; 
+    display: inline-block;
+    height: 100px;
+    
+    
+}
+
+.scorebox0 {
+    margin-right: 5vw;
+    display: inline-block;
+    width: 25vw;
+    height: 28vh;
+    font-size: 100%;
+    padding-top: 30px; 
+    
+}
+
+.button {
+    
+    color: rgba(50, 50, 50, 1);
+    background: none;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons a {
+    color: #e8e8ee;
+}
+.button:hover { font-weight: 600; }
+
+.active .scorebox { font-weight: 300; }
+.scorebox1 {
+    padding-top: 30px;
+    margin-left: 5vw;
+    display: inline-block;
+    width: 25vw;
+    height: 28vh;
+
+}
+.player{
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+}
+.glb-score{
+    display: block;
+    font-size: 80px;
+    color: red;
+}
+
+
+.buttons {
+    margin-top: 40px;
+}
+.button{
+    	width: 150px;
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+        display: inline-block; 
+        background-color: #eb4034; 
+        margin-left: 5px;
+        text-decoration: none;
+        border-radius: 100px;
+}
+
+.active{
+    background-color: rgba(0 ,125, 125, .90);
+    border-radius: 3px ;
+}
+
+.winner
+{
+    color: rgba(0 ,125, 125, .90);
+    background-color:  beige; 
+    font-size: 20px;
+}
+
+@media (max-width: 540px){
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        /* margin: 0 auto; */
+        align-items: center;
+    }
+
+    .buttons a:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .scorebox0 {
+        width: 35vw;
+    }
+    .scorebox1 {
+        width: 35vw;
+    }
+}
+
